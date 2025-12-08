@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصلي معنا - حياة</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="back-btn">→ الرجوع للرئيسية</a>
+        <h1>📧 تواصلي معنا</h1>
+        <p>نحن هنا لمساعدتك</p>
+    </header>
+
+    <div class="container">
+        <!-- Contact Info -->
+        <div class="card">
+            <h2>📬 معلومات التواصل</h2>
+            <p><strong>البريد الإلكتروني:</strong> support@hayat-app.com</p>
+            <p><strong>وقت الرد:</strong> خلال 24-48 ساعة</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="card">
+            <h2>✉️ أرسلي رسالة</h2>
+            
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">الاسم</label>
+                    <input type="text" id="name" name="name" placeholder="اسمك الكريم" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">الموضوع</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">اختاري الموضوع</option>
+                        <option value="technical">مشكلة تقنية</option>
+                        <option value="suggestion">اقتراح أو فكرة</option>
+                        <option value="subscription">الاشتراك والدفع</option>
+                        <option value="privacy">الخصوصية والبيانات</option>
+                        <option value="other">موضوع آخر</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" name="message" placeholder="اكتبي رسالتك هنا..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="device">معلومات الجهاز (اختياري)</label>
+                    <input type="text" id="device" name="device" placeholder="مثال: iPhone 15, iOS 17">
+                </div>
+
+                <button type="submit" class="submit-btn">إرسال الرسالة</button>
+            </form>
+        </div>
+
+        <!-- Quick Help -->
+        <div class="card">
+            <h2>💡 مساعدة سريعة</h2>
+            <p>قبل التواصل، قد تجدين إجابتك في:</p>
+            <ul>
+                <li><a href="faq.html">الأسئلة الشائعة</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="card">
+            <h2>📱 تابعينا</h2>
+            <p>تابعينا على وسائل التواصل للحصول على نصائح ومستجدات:</p>
+            <p style="font-size: 24px; margin-top: 10px;">
+                <a href="#" style="text-decoration: none; margin-left: 15px;">📸</a>
+                <a href="#" style="text-decoration: none; margin-left: 15px;">🐦</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 حياة. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            // You can add custom handling here
+            // For now, it will submit to Formspree
+        });
+    </script>
+</body>
+</html>
